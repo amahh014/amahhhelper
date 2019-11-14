@@ -1,0 +1,4 @@
+{
+  "mongoURI": "YOUR MONGODB ID",
+  "jwtSecret": "sl_myJwtSecret"
+}
