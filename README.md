@@ -1,6 +1,6 @@
-# MERN Shopping List
+# Helper for Small Companies
 
-> Shopping list app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.
+You can add notes, make fast orders.
 
 ## Quick Start
 
