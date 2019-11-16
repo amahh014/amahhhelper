@@ -18,7 +18,7 @@ class OrderList extends Component {
   }
 
   onDeleteClick = id => {
-    this.props.deleteOrder(id);
+    this.props.deleteOrder(id); 
   };
 
   render() {
@@ -26,18 +26,18 @@ class OrderList extends Component {
     return (
       <Container>
         <ListGroup>
-          <TransitionGroup className='shopping-list'>
+          <TransitionGroup className='shopping-list' style={{ marginBottom: '2rem' }}>
             {orders.map(({ _id, name, date, number, address, model }) => (
               <CSSTransition key={_id} timeout={500} classNames='fade'>
                 <ListGroupItem>
                   {this.props.isAuthenticated ? (
                     <Button
                       className='remove-btn'
-                      color='danger'
+                      color='info'
                       size='sm'
                       onClick={this.onDeleteClick.bind(this, _id)}
                     >
-                      &times;
+                      &times; შესრულება
                     </Button>
                   ) : null}
                   

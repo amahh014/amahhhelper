@@ -2,49 +2,49 @@ import React, { Component } from 'react';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
-import { getItems, deleteItem } from '../actions/itemActions';
+import { getPlaces, deletePlace } from '../actions/placeActions';
 import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 
-class ShoppingList extends Component {
+class PlaceList extends Component {
   static propTypes = {
-    getItems: PropTypes.func.isRequired,
-    item: PropTypes.object.isRequired,
+    getPlaces: PropTypes.func.isRequired,
+    place: PropTypes.object.isRequired,
     isAuthenticated: PropTypes.bool
   };
 
   componentDidMount() {
-    this.props.getItems();
+    this.props.getPlaces();
   }
 
   onDeleteClick = id => {
-    this.props.deleteItem(id);
+    this.props.deletePlace(id); 
   };
 
   render() {
-    const { items } = this.props.item;
+    const { places } = this.props.place;
     return (
-      <Container> 
+      <Container>
         <ListGroup>
           <TransitionGroup className='shopping-list' style={{ marginBottom: '2rem' }}>
-            {items.map(({ _id, name, date }) => (
+            {places.map(({ _id, name, date, number, address, comment }) => (
               <CSSTransition key={_id} timeout={500} classNames='fade'>
                 <ListGroupItem>
                   {this.props.isAuthenticated ? (
                     <Button
                       className='remove-btn'
-                      color='warning'
+                      color='primary'
                       size='sm'
                       onClick={this.onDeleteClick.bind(this, _id)}
                     >
                       &times; შესრულება
                     </Button>
                   ) : null}
-                  {name}
+                  
+                  <p className="post" style={{ color: 'red' }}>{name} {number} {address} {comment}</p>
                   <p className='post-date'>
                       შექმნილია <Moment format='YYYY/MM/DD'>{date}</Moment>
                   </p>
-                  
                 </ListGroupItem>
               </CSSTransition>
             ))}
@@ -56,11 +56,11 @@ class ShoppingList extends Component {
 }
 
 const mapStateToProps = state => ({
-  item: state.item,
+  place: state.place,
   isAuthenticated: state.auth.isAuthenticated
 });
 
 export default connect(
   mapStateToProps,
-  { getItems, deleteItem }
-)(ShoppingList);
+  { getPlaces, deletePlace }
+)(PlaceList);

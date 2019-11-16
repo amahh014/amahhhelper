@@ -37,7 +37,7 @@ class CalList extends Component {
                       size='sm'
                       onClick={this.onDeleteClick.bind(this, _id)}
                     >
-                      &times;
+                      &times; შესრულება
                     </Button>
                   ) : null}
                   <p style={{ color: 'blue' }}>{name} {comment}</p>

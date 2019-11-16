@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
       // Validate password
       bcrypt.compare(password, user.password)
         .then(isMatch => {
-          if(!isMatch) return res.status(400).json({ msg: 'Invalid credentials' });
+          if(!isMatch) return res.status(400).json({ msg: 'მონაცემები არასწორია' });
 
           jwt.sign(
             { id: user.id },

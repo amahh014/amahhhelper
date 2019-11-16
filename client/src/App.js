@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import AppNavbar from './components/AppNavbar';
 import ShoppingList from './components/ShoppingList';
-import CallList from './components/CallList';
 import ItemModal from './components/ItemModal';
 import CallModal from './components/CallModal';
 import OrderModal from './components/OrderModal';
+import PlaceModal from './components/PlaceModal';
+import CallList from './components/CallList';
 import OrderList from './components/OrderList';
+import PlaceList from './components/PlaceList';
 import { Container } from 'reactstrap';
 
 import { Provider } from 'react-redux';
@@ -36,6 +38,10 @@ class App extends Component {
           <Container>
             <OrderModal />
             <OrderList />
+          </Container>
+          <Container>
+            <PlaceModal />
+            <PlaceList />
           </Container>
         </div>
       </Provider>

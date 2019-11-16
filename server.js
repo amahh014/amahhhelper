@@ -25,6 +25,7 @@ app.use('/api/items', require('./routes/api/items'));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/calls', require('./routes/api/calls'));
 app.use('/api/orders', require('./routes/api/orders'));
+app.use('/api/places', require('./routes/api/places'));
 app.use('/api/auth', require('./routes/api/auth'));
 
 // Serve static assets if in production

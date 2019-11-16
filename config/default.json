@@ -1,4 +1,4 @@
 {
-  "mongoURI": "YOUR MONGODB ID",
+  "mongoURI": "mongodb+srv://theamahh:zaza5300@cluster0-whkqz.mongodb.net/test?retryWrites=true&w=majority",
   "jwtSecret": "sl_myJwtSecret"
 }

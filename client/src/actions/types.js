@@ -13,6 +13,11 @@ export const ADD_ORDER = 'ADD_ORDER';
 export const DELETE_ORDER = 'DELETE_ORDER';
 export const ORDERS_LOADING = 'ORDERS_LOADING';
 
+export const GET_PLACES = 'GET_PLACES';
+export const ADD_PLACE = 'ADD_PLACE';
+export const DELETE_PLACE = 'DELETE_PLACE';
+export const PLACES_LOADING = 'PLACES_LOADING';
+
 export const USER_LOADING = "USER_LOADING";
 export const USER_LOADED = "USER_LOADED";
 export const AUTH_ERROR = "AUTH_ERROR";
