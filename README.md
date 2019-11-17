@@ -1,6 +1,6 @@
 ## Deployed
 
-# You can check site from this url : https://salty-brook-11936.herokuapp.com/ , In the deployed version, RegisterModal is not active, because if I'll active you can edit my notes :sweat_smile:
+You can check site from this url : https://salty-brook-11936.herokuapp.com/ , In the deployed version, RegisterModal is not active, because if I'll active you can edit my notes :sweat_smile:
 
 # Logged In Screen:
 
