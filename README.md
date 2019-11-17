@@ -2,6 +2,11 @@
 
 # You can check site from this url : https://salty-brook-11936.herokuapp.com/ , In the deployed version, RegisterModal is not active, because if I'll active you can edit my notes :sweat_smile:
 
+# Logged In Screen:
+
+![Image of LoggedInScreen]
+(https://www.dropbox.com/s/yv31vwplbkf0isw/screenLogIn.png?dl=0)  :computer: :computer: :computer:
+
 # Helper for Small Companies
 
 You can add notes, make fast orders.
