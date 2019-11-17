@@ -4,8 +4,7 @@
 
 # Logged In Screen:
 
-![Image of LoggedInScreen]
-(https://www.dropbox.com/s/yv31vwplbkf0isw/screenLogIn.png?dl=0)  :computer: :computer: :computer:
+<img src="https://github.com/amahh014/amahhhelper/blob/master/LoggedScreen.png" />
 
 # Helper for Small Companies
 
